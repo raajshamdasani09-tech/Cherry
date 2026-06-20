@@ -10,7 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Cinzel:wght@400;500;600&family=Great+Vibes&display=swap"
         rel="stylesheet">
 
-        <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -20,7 +20,6 @@
             <div class="left-nav">
                 <a href="#collections">Collections</a>
                 <a href="#about">About</a>
-                <a href="#shop">Shop</a>
             </div>
 
             <a href="#" class="logo">Cherry Blossom</a>
@@ -29,7 +28,20 @@
                 <a href="#reviews">Reviews</a>
                 <a href="#contact">Contact</a>
             </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
+
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#collections">Collections</a>
+            <a href="#about">About</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+        </div>
     </header>
 
     <section class="hero">
@@ -273,6 +285,22 @@
     </footer>
 
     <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById("menuToggle");
+        const mobileNav = document.getElementById("mobileNav");
+
+        menuToggle.addEventListener("click", () => {
+            menuToggle.classList.toggle("open");
+            mobileNav.classList.toggle("open");
+        });
+
+        mobileNav.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", () => {
+                menuToggle.classList.remove("open");
+                mobileNav.classList.remove("open");
+            });
+        });
+
         // Auto-scroll the collection strip
         const container = document.querySelector(".collection-container");
 
