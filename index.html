@@ -15,6 +15,13 @@
 
 <body>
 
+    <!-- Floating WhatsApp Button -->
+    <a class="whatsapp-float" href="https://wa.me/918010244254" target="_blank" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 0C7.163 0 0 7.163 0 16c0 2.833.738 5.49 2.027 7.8L0 32l8.418-2.004A15.94 15.94 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 01-6.77-1.851l-.485-.288-5.003 1.191 1.215-4.871-.317-.502A13.27 13.27 0 012.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.87c-.398-.199-2.354-1.162-2.719-1.295-.365-.133-.631-.199-.897.199-.266.398-1.03 1.295-1.263 1.561-.232.266-.465.299-.863.1-.398-.2-1.681-.62-3.203-1.978-1.183-1.057-1.982-2.362-2.214-2.76-.232-.398-.025-.613.175-.811.18-.178.398-.465.597-.698.199-.232.266-.398.398-.664.133-.266.066-.498-.033-.697-.1-.2-.897-2.162-1.229-2.96-.324-.778-.653-.672-.897-.684l-.764-.013c-.266 0-.697.1-1.063.498-.365.398-1.395 1.362-1.395 3.324s1.428 3.854 1.627 4.12c.199.266 2.81 4.29 6.808 6.018.951.41 1.694.655 2.273.839.955.303 1.825.26 2.512.158.766-.114 2.354-.962 2.686-1.891.332-.929.332-1.725.232-1.891-.099-.166-.365-.266-.763-.465z"/>
+        </svg>
+    </a>
+
     <header>
         <nav>
             <div class="left-nav">
@@ -22,10 +29,10 @@
                 <a href="#about">About</a>
             </div>
 
-
             <a href="#" class="logo">Cherry Blossom</a>
 
             <div class="right-nav">
+                <a href="#founder">Founder</a>
                 <a href="#reviews">Reviews</a>
                 <a href="#contact">Contact</a>
             </div>
@@ -40,9 +47,11 @@
         <div class="mobile-nav" id="mobileNav">
             <a href="#collections">Collections</a>
             <a href="#about">About</a>
+            <a href="#founder">Founder</a>
             <a href="#reviews">Reviews</a>
             <a href="#contact">Contact</a>
         </div>
+
     </header>
 
     <section class="hero">
@@ -64,23 +73,22 @@
         </div>
     </section>
 
-    <section id="collections">
+    <section id="collections" class="fade-section">
 
         <h1 class="title">Our Collections</h1>
 
         <div class="collection-container">
 
-            <!-- Diamond Rings -->
-            <div class="card" data-current="0">
+            <!-- Necklace -->
+            <div class="card" data-current="0"
+                data-msg="Hi! I'm interested in the Anti-tarnish Necklace from Cherry Blossom 🌸">
                 <div class="slider">
                     <button class="prev" aria-label="Previous image">&#10094;</button>
-                    <img class="main-img" src="image/nec4.jpeg"
-                        alt="Neclace">
+                    <img class="main-img" src="image/nec4.jpeg" alt="Neclace">
                     <button class="next" aria-label="Next image">&#10095;</button>
                 </div>
                 <div class="thumbs">
-                    <img class="active" src="image/nec3.jpeg"
-                        alt="">
+                    <img class="active" src="image/nec3.jpeg" alt="">
                     <img src="image/nec.jpeg" alt="">
                     <img src="image/nec2.jpeg" alt="">
                     <img src="image/nec5.jpeg" alt="">
@@ -88,71 +96,76 @@
                 </div>
                 <h2>Anti-tarnish Neclace</h2>
                 <p>Elegant anti tarnished pretty neclace.</p>
-                <button class="explore-btn">Explore</button>
+                <div class="card-btns">
+                    <button class="whatsapp-btn">🛒 Order on WhatsApp</button>
+                </div>
             </div>
 
-            <!-- Necklaces -->
-            <div class="card" data-current="0">
+            <!-- Bracelets -->
+            <div class="card" data-current="0"
+                data-msg="Hi! I'm interested in the Bracelet from Cherry Blossom 🌸">
                 <div class="slider">
                     <button class="prev" aria-label="Previous image">&#10094;</button>
-                    <img class="main-img" src="image/bra3.jpeg"
-                        alt="Braclet">
+                    <img class="main-img" src="image/bra3.jpeg" alt="Braclet">
                     <button class="next" aria-label="Next image">&#10095;</button>
                 </div>
                 <div class="thumbs">
-                    <img class="active" src="image/bra1.jpeg"
-                        alt="">
+                    <img class="active" src="image/bra1.jpeg" alt="">
                     <img src="image/bra2.jpeg" alt="">
                     <img src="image/bra3.jpeg" alt="">
                 </div>
-                <h2>Necklaces</h2>
+                <h2>Braclets</h2>
                 <p>Delicate pendants and statement chains in gold.</p>
-                <button class="explore-btn">Explore</button>
+                <div class="card-btns">
+                    <button class="whatsapp-btn">🛒 Order on WhatsApp</button>
+                </div>
             </div>
 
-            <!-- Earrings -->
-            <div class="card" data-current="0">
+            <!-- Mangalsutra -->
+            <div class="card" data-current="0"
+                data-msg="Hi! I'm interested in the Anti-Tarnished Mangalsutra from Cherry Blossom 🌸">
                 <div class="slider">
                     <button class="prev" aria-label="Previous image">&#10094;</button>
-                    <img class="main-img" src="image/mal1.jpeg"
-                        alt="Mangalsutra">
+                    <img class="main-img" src="image/mal1.jpeg" alt="Mangalsutra">
                     <button class="next" aria-label="Next image">&#10095;</button>
                 </div>
                 <div class="thumbs">
-                    <img class="active" src="image/mal2.jpeg"
-                        alt="">
+                    <img class="active" src="image/mal2.jpeg" alt="">
                     <img src="image/mal3.jpeg" alt="">
                     <img src="image/mal4.jpeg" alt="">
                 </div>
                 <h2>Anti-Tarnished Mangalsutra</h2>
                 <p>Studs and drops crafted for everyday radiance.</p>
-                <button class="explore-btn">Explore</button>
+                <div class="card-btns">
+                    <button class="whatsapp-btn">🛒 Order on WhatsApp</button>
+                </div>
             </div>
 
-            <!-- Bracelets -->
-            <div class="card" data-current="0">
+            <!-- Earrings -->
+            <div class="card" data-current="0"
+                data-msg="Hi! I'm interested in the Anti-tarnished Earrings from Cherry Blossom 🌸">
                 <div class="slider">
                     <button class="prev" aria-label="Previous image">&#10094;</button>
-                    <img class="main-img" src="image/ear1.jpeg"
-                        alt="Earrings">
+                    <img class="main-img" src="image/ear1.jpeg" alt="Earrings">
                     <button class="next" aria-label="Next image">&#10095;</button>
                 </div>
                 <div class="thumbs">
-                    <img class="active" src="image/ear2.jpeg"
-                        alt="">
+                    <img class="active" src="image/ear2.jpeg" alt="">
                     <img src="image/ear3.jpeg" alt="">
                     <img src="image/ear2.jpeg" alt="">
                 </div>
-                <h2>Bracelets</h2>
+                <h2>Anti-tarnished Earrings</h2>
                 <p>Let Your Ears Do the Talking</p>
-                <button class="explore-btn">Explore</button>
+                <div class="card-btns">
+                    <button class="whatsapp-btn">🛒 Order on WhatsApp</button>
+                </div>
             </div>
 
-
+        </div>
 
     </section>
 
-    <section id="about">
+    <section id="about" class="fade-section">
 
         <div class="about-img">
             <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?q=80&w=1200"
@@ -178,7 +191,32 @@
 
     </section>
 
-    <section id="reviews">
+    <!-- Meet the Founder -->
+    <section id="founder" class="fade-section">
+
+        <div class="founder-img-wrap">
+            <!-- Replace src with owner's actual photo e.g. src="image/founder.jpg" -->
+            <img src="image/owner.png"
+                alt="Founder of Cherry Blossom">
+        </div>
+
+        <div class="founder-content">
+            <h1>Meet the Founder</h1>
+            <span class="founder-tag">🌸 Young Founder · Age 16</span>
+            <p>
+                Hi, I'm <strong>Dhrishti Khubnani</strong> — the heart behind Cherry Blossom.
+                I started this journey at 16 with one simple belief: every girl deserves
+                jewellery that feels personal, beautiful and lasting. Each piece in our
+                collection is something I have personally chosen and loved. Cherry Blossom
+                is not just a business for me — it is my passion, my dream and my story
+                still being written. 🌸
+            </p>
+            <div class="founder-name">Dhrishti Khubnani</div>
+        </div>
+
+    </section>
+
+    <section id="reviews" class="fade-section">
 
         <h1 class="title">What Our Customers Say</h1>
 
@@ -187,58 +225,65 @@
             <div class="review">
                 ⭐⭐⭐⭐⭐
                 <p>Absolutely stunning designs. Premium quality and beautiful finish.</p>
-                <h3>Priya Sharma</h3>
+                <h3>Poonam Jagia</h3>
             </div>
 
             <div class="review">
                 ⭐⭐⭐⭐⭐
                 <p>The jewellery feels luxurious and unique.</p>
-                <h3>Ananya Kapoor</h3>
+                <h3>Shreya Dawani</h3>
             </div>
 
             <div class="review">
                 ⭐⭐⭐⭐⭐
                 <p>Perfect bridal collection. I loved every piece.</p>
-                <h3>Riya Patel</h3>
+                <h3>Tanya Shamdasani</h3>
+            </div>
+
+            <div class="review">
+                ⭐⭐⭐⭐⭐
+                <p>I'm in love with these jewels! They sparkle beautifully and receive compliments every time I wear them.</p>
+                <h3>Prisha Dhanwani</h3>
             </div>
 
         </div>
 
     </section>
 
-    <section class="stats">
+    <section class="stats fade-section">
 
         <div>
-            <h1>5000+</h1>
+            <h1>500+</h1>
             <p>Happy Customers</p>
         </div>
 
         <div>
-            <h1>10+</h1>
-            <p>Years Experience</p>
+            <h1>500+</h1>
+            <p>Orders Delivered</p>
         </div>
 
         <div>
-            <h1>250+</h1>
+            <h1>150+</h1>
             <p>Luxury Designs</p>
         </div>
 
         <div>
-            <h1>50+</h1>
+            <h1>20+</h1>
             <p>Awards Won</p>
         </div>
 
     </section>
 
-    <section id="contact">
+    <section id="contact" class="fade-section">
 
         <div class="contact-box">
             <h1>Get In Touch</h1>
 
             <form id="contactForm" action="https://formspree.io/f/mkoadlov" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" pattern="[a-zA-Z][a-zA-Z0-9._%+-]*@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-                    title="Email should start with a letter. Example: ram@gmail.com or ram123@gmail.com">
+                <input type="email" id="email" name="email" placeholder="Your Email"
+                    pattern="[a-zA-Z][a-zA-Z0-9]*@[a-zA-Z]+\.[a-zA-Z]{2,}"
+                    title="Email must start with a letter. Example: ram123@gmail.com">
                 <small id="error"></small>
                 <textarea name="message" placeholder="Your Message" required></textarea>
                 <input type="hidden" name="_subject" value="New message from Cherry Blossom website">
@@ -254,18 +299,17 @@
         <span class="footer-logo">Cherry Blossom</span>
 
         <p>
-            At Cherry Blossom, jewellery is more than an accessory—it is a
+            At Cherry Blossom, jewellery is more than an accessory — it is a
             celebration of beauty, love and unforgettable moments. Inspired
             by the elegance of blooming cherry blossoms, every piece is
             crafted to reflect femininity, grace and luxury.
         </p>
 
         <p>
-            From sparkling engagement rings and bridal necklaces to elegant
-            bracelets and earrings, our collections are handcrafted by
-            expert artisans using premium materials and certified gemstones.
-            Our mission is to create timeless jewellery that becomes a
-            cherished part of your most precious memories.
+            From sparkling necklaces and mangalsutras to elegant bracelets and
+            earrings, every piece is handpicked with love using premium anti-tarnish
+            materials. Founded by a young dreamer at 16, Cherry Blossom is a story
+            of passion, creativity and heart.
         </p>
 
         <h3>© 2026 Cherry Blossom Jewellery</h3>
@@ -293,15 +337,13 @@
 
         setInterval(() => {
             if (!container) return;
-
             container.scrollBy({ left: 335, behavior: "smooth" });
-
             if (container.scrollLeft + container.clientWidth >= container.scrollWidth - 10) {
                 container.scrollTo({ left: 0, behavior: "smooth" });
             }
         }, 3500);
 
-        // Wire up each card's slider independently (no shared/duplicate IDs)
+        // Wire up each card's slider independently
         document.querySelectorAll(".card").forEach((card) => {
             const mainImage = card.querySelector(".main-img");
             const prevBtn = card.querySelector(".prev");
@@ -320,15 +362,22 @@
 
             nextBtn.addEventListener("click", () => showImage(current + 1));
             prevBtn.addEventListener("click", () => showImage(current - 1));
-
             thumbs.forEach((thumb, index) => {
                 thumb.addEventListener("click", () => showImage(index));
             });
-
-            // Auto slide for this card, each on its own timer
             setInterval(() => showImage(current + 1), 4000);
+
+            // WhatsApp order button
+            const waBtn = card.querySelector(".whatsapp-btn");
+            if (waBtn) {
+                waBtn.addEventListener("click", () => {
+                    const msg = encodeURIComponent(card.dataset.msg || "Hi! I'm interested in ordering from Cherry Blossom 🌸");
+                    window.open("https://wa.me/918010244254?text=" + msg, "_blank");
+                });
+            }
         });
-        // Contact form -> Formspree (sends to raajshamdasani09@gmail.com)
+
+        // Contact form -> Formspree
         const contactForm = document.getElementById("contactForm");
         const formStatus = document.getElementById("formStatus");
 
@@ -364,18 +413,27 @@
             submitBtn.textContent = "Send Message";
         });
 
+        // Email validation
         const email = document.getElementById("email");
         const error = document.getElementById("error");
 
         email.addEventListener("input", () => {
-            const regex = /^[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{2,}$/;
-
-            if (!regex.test(email.value)) {
-                error.innerText = "❌ Only alphabet emails allowed (e.g. ram@gmail.com)";
-            } else {
-                error.innerText = "";
-            }
+            const regex = /^[a-zA-Z][a-zA-Z0-9]*@[a-zA-Z]+\.[a-zA-Z]{2,}$/;
+            error.innerText = regex.test(email.value)
+                ? ""
+                : "❌ Email must start with a letter (e.g. ram123@gmail.com)";
         });
+
+        // Scroll fade-in
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll(".fade-section").forEach(sec => observer.observe(sec));
     </script>
 
 </body>
